@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "24b5a2f4-61f2-4cef-af3f-00b34a38d403",
+		"name": "New Collection Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"clientId\": 3,\r\n        \"firstName\": \"Maria\",\r\n        \"lastName\": \"Orellana\",\r\n        \"birthday\": \"2022-06-07\",\r\n        \"gender\": \"Masculino\",\r\n        \"cellphone\": \"7792-8864\",\r\n        \"homephone\": \"2253-6000\",\r\n        \"addressHome\": \"Residencial villa galicia blv altamira casa 32\",\r\n        \"profession\": \"Doctor\",\r\n        \"clientIncome\": 3000.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/application/client/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"application",
+						"client",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/application/client/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"application",
+						"client",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
